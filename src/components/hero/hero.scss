@@ -1,0 +1,13 @@
+@import '../../styles/colors.scss';
+@import '../../styles/font.scss';
+@import '../../styles/custom_style.scss';
+.hero {
+  &_text {
+    color: $selected_link;
+    text-align: center;
+    h3 {
+      font-weight: $light_font_weight;
+      font-style: $italic_font_style;
+    }
+  }
+}

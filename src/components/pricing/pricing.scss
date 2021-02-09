@@ -1,0 +1,36 @@
+@import '../../styles/colors.scss';
+@import '../../styles/font.scss';
+@import '../../styles/custom_style.scss';
+
+.pricing_section {
+  color: $selected_link;
+  margin-top: 30px;
+  text-align: center;
+  background-color: $white;
+  padding: 7px;
+  border-radius: 10px;
+  &_green {
+    color: #0D870D;
+  }
+  &_red {
+    color: #C62A2A;
+    text-decoration: line-through;
+  }
+  &_bonus {
+    text-align: center;
+    padding: 10px;
+    color: $selected_link;
+    opacity: 0.8;
+    font-style: $italic_font_style;
+  }
+  &_part {
+    border-top: 1px solid $selected_link;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h6 {
+    width: 50%;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../styles/colors.scss';
+@import '../../styles/custom_style.scss';
+
+.button {
+  font-family: $poppins_font;
+  color: $white;
+  background-color: $selected_link;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: $btn_border_radius;
+  transition: transform .2s;
+
+  &:hover {
+    background-color: $hover_color;
+    transform: $btn_scale_up;
+  }
+  
+  &:active {
+    background-color: $selected_link;
+    transform: $btn_scale_down;
+  }
+}

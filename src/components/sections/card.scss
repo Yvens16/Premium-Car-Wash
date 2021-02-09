@@ -1,0 +1,24 @@
+@import '../../styles/colors.scss';
+@import '../../styles/font.scss';
+@import '../../styles/custom_style.scss';
+
+.section_card {
+  border-radius: $section_border_top_radius;
+  text-align: center;
+  background-color: $white;
+  font-weight: lighter;
+  margin-bottom: $section_margin_bottom;
+  img {
+    max-width: 100%;
+    max-height: 200px;
+    border-top-left-radius: $section_border_top_radius;
+    border-top-right-radius: $section_border_top_radius;
+  }
+  &_text {
+    text-align: center;
+    padding: 10px;
+    color: $selected_link;
+    opacity: 0.8;
+    font-style: $italic_font_style;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../styles/colors.scss';
+@import '../../styles/font.scss';
+@import '../../styles/custom_style.scss';
+
+.subtitle {
+  text-align: center;
+  color: $selected_link;
+  font-weight: bolder;
+}

@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+@import '../../styles/font.scss';
+@import '../../styles/custom_style.scss';
+
+.testimonial_card {
+  border-radius: $section_border_top_radius;
+  text-align: center;
+  background-color: $white;
+  font-weight: lighter;
+  margin-bottom: $section_margin_bottom;
+  padding: 10px;
+  color: $selected_link;
+  &_profile {
+    padding: 20px;
+    border-radius: 50%;
+    width: 130px; 
+  }
+  &_text {
+    text-align: center;
+    padding: 10px;
+    color: $selected_link;
+    opacity: 0.8;
+    font-style: $italic_font_style;
+  }
+  .stars {
+    img {
+      width: 30px;
+      padding: 5px;
+    }
+  }
+}

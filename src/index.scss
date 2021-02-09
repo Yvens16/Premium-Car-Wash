@@ -1,0 +1,12 @@
+@import 'styles/colors.scss';
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $main_bg;
+}
+
+code {
+  font-family: 'Poppins:Medium,bold,italic', sans-serif;
+}

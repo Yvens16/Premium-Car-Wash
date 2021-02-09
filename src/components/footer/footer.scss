@@ -1,0 +1,30 @@
+@import '../../styles/colors.scss';
+@import '../../styles/font.scss';
+@import '../../styles/custom_style.scss';
+
+.footer {
+  background-color: $white;
+  text-align: center;
+  color: $selected_link;
+  opacity: 0.8;
+  font-style: italic;
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+  &_social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    svg {
+      width: 20px;
+    }
+  }
+  &_copywright {
+    color: $selected_link;
+    text-align: center;
+    opacity: 0.8;
+    font-style: italic;
+    margin-bottom:0;
+  }
+}

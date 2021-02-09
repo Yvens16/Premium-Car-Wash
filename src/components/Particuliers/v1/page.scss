@@ -1,0 +1,23 @@
+.particuliers {
+  margin: 0 auto;
+  width: 90%;
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
+  .hero_text {
+    h1 {
+      width: 103%;
+    }
+  }
+  &_horizontal_scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    .testimonial_card {
+      flex: 0 0 auto;
+      width: 80%;
+      margin: 8px;
+    }
+  }
+}

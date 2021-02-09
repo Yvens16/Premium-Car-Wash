@@ -1,0 +1,40 @@
+@import '../../styles/colors.scss';
+
+header {
+  a {
+    text-decoration: none;
+    color:$unselected_link;
+  }
+  background-color: $white;
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50px;
+    }
+    &_logoname {
+      margin-left: 8px;
+      color: $premium_green;
+    }
+  }
+  nav {
+    ul {
+      .selected{
+        color: $selected_link;
+      }
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      text-decoration: none;
+      margin-block-start: 0;
+      padding-inline-start:0;
+      li {
+        padding: 2px;
+        NavLink {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
