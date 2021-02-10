@@ -12,7 +12,10 @@
   outline: none;
   border-radius: $btn_border_radius;
   transition: transform .2s;
-
+  @media(min-width: 1200px) {
+    font-size: 30px;
+    padding: 20px;
+  }
   &:hover {
     background-color: $hover_color;
     transform: $btn_scale_up;

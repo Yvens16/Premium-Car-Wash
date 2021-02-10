@@ -10,6 +10,7 @@ import oldmanDetailingImage from '../../../assets/images/old_man_detailing.png';
 import parkingImage from '../../../assets/images/parking_lot.jpg';
 import Abou from '../../../assets/images/testimonials/aboud_drame.jpeg';
 import Tonio from '../../../assets/images/testimonials/Antonio.jpg'
+import Petronille from '../../../assets/images/testimonials/Pétronille.JPG';
 
 
 require('./page.scss');
@@ -19,10 +20,6 @@ function Page() {
     <Hero
       title='Gagnez du temps, restez chez vous'
       subtitle='Un habitacle propre de qualité professionnel parce que nous avons l’expérience et les outils pour.'/>
-      <Button
-        text='Nettoyer ma voiture'
-        linkTo='/'
-      />
       <Subtitle
         title='Et pourquoi pas éviter un mal de dos en quelques clics ?'/>
       <Card
@@ -36,7 +33,7 @@ function Page() {
         imgLink={parkingImage}/>
       <Button
         text='Nettoyer ma voiture'
-        linkTo='/'
+        linkTo='/choisir_sa_ville'
       />
       <Subtitle
         title="Mieux vaut prévenir que guérir"/>
@@ -53,7 +50,7 @@ function Page() {
           text='Pour moi qui passe beaucoup de temps dans ma voiture pour me rendre au boulot. Ça me tapait un peu sur les nerfs de voir les miettes entre les sièges qui m’était inatteignable. C’est sûr que je pouvais pas rivaliser sans les outils qu’ils possèdent. Au moins je ne me prend plus la tête à y penser.'
         />
         <TestimonialCard
-          img={Abou}
+          img={Petronille}
           name='Pétronille Godin'
           title="Directrice d'école primaire" 
           text='Après une journée de cours ou au bureau, j’ai plus vraiment la force de nettoyer les cochonnerie de mes 2 petites filles. Grâce à ce service, j’ai transformer une corvée en un moment de détente.'
@@ -67,7 +64,7 @@ function Page() {
       </div>
       <Button
         text='Nettoyer ma voiture'
-        linkTo='/'
+        linkTo='/choisir_sa_ville'
       />
       <Pricing/>
     </div>

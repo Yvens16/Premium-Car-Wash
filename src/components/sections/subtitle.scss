@@ -6,4 +6,7 @@
   text-align: center;
   color: $selected_link;
   font-weight: bolder;
+  @media(min-width: 1200px) {
+    font-size: 30px;
+  }
 }
