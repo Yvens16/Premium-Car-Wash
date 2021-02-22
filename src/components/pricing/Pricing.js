@@ -26,7 +26,7 @@ function Pricing() {
       </div>
       <Button
         text='Nettoyer ma voiture'
-        linkTo='/'
+        linkTo='/choisir_sa_ville'
       />
     </div>
   )

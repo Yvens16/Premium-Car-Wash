@@ -8,7 +8,7 @@ require('./selectCity.scss')
 export default function SelectCity() {
   const [selectedOption, setSelectedOption] = useState(null);
   return (
-    <div className="city_selection">
+    <main className="city_selection">
       <Subtitle title='Cherchez une ville ou un Code postal'/>
       <Subtitle title="Pour vérifier que vous êtes bien dans la zone d'intervention"/>
       <Select
@@ -17,6 +17,6 @@ export default function SelectCity() {
         options={cities}
       />
       {selectedOption !== null ? <Button external={true} text='Choisir mon forfait' linkTo='https://tripetto.app/run/83MCTHCE4D'/> : null}
-    </div>
+    </main>
   );
 }

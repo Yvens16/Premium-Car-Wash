@@ -11,14 +11,14 @@ export default function Navbar() {
         <img className='head_logo' src={logo} alt="logo"/>
         <h4 className="head_logoname">Premium Car Wash</h4>
       </NavLink>
-      <nav>
+      {/* <nav>
         <ul>
           <li><NavLink to='/' activeClassName="selected" exact>Accueil</NavLink></li>
           <li><NavLink to='/d' activeClassName="selected">Particuliers</NavLink></li>
           <li><NavLink to='/s' activeClassName="selected">Pro</NavLink></li>
           <li><NavLink to='/f' activeClassName="selected">Taxi/VTC</NavLink></li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 }

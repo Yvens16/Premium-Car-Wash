@@ -6,7 +6,7 @@ import {ReactComponent as Facebook} from '../../assets/images/facebook.svg';
 require('./footer.scss');
 function Footer() {
   return (
-    <div className='footer'>
+    <footer className='footer'>
       <div className="contact">
         <p>
           contact 1:
@@ -29,7 +29,7 @@ function Footer() {
         </a>
       </div>
       <p className='footer_copywright'>Copyright © 2020 Premium Car wash</p>
-    </div>
+    </footer>
   )
 }
 

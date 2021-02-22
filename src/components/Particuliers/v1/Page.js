@@ -16,7 +16,7 @@ import Petronille from '../../../assets/images/testimonials/Pétronille.JPG';
 require('./page.scss');
 function Page() {
   return (
-    <div className='particuliers'>
+    <main className='particuliers'>
     <Hero
       title='Gagnez du temps, restez chez vous'
       subtitle='Un habitacle propre de qualité professionnel parce que nous avons l’expérience et les outils pour.'/>
@@ -35,11 +35,11 @@ function Page() {
         text='Nettoyer ma voiture'
         linkTo='/choisir_sa_ville'
       />
-      <Subtitle
+      {/* <Subtitle
         title="Mieux vaut prévenir que guérir"/>
       <Card
         text='En utilisant la valise diagnostic vous pourrez suivre l’évolution des composantes de votre voitures avant même qu’un voyant s’allume sur le tableau de bord. De quoi anticiper des problèmes mineurs qui pourrait lourdement s’aggraver et vous coûter une somme très conséquente chez votre garagiste.'
-        imgLink={diagnosticImage}/>
+        imgLink={diagnosticImage}/> */}
       <Subtitle
         title="Fait pour les gens pointilleux avec leur voiture"/>
       <div className="particuliers_horizontal_scroll">
@@ -67,7 +67,7 @@ function Page() {
         linkTo='/choisir_sa_ville'
       />
       <Pricing/>
-    </div>
+    </main>
   )
 }
 
