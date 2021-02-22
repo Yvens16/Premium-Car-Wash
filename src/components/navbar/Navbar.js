@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <header>
       <NavLink to='/' className="head">
-        <img className='head_logo' src={logo} alt="logo"/>
+        <img className='head_logo' loading="lazy" src={logo} alt="logo"/>
         <h4 className="head_logoname">Premium Car Wash</h4>
       </NavLink>
       {/* <nav>
