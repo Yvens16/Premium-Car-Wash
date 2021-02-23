@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/carwashlogominified300.png';
+// import logo from '../../assets/images/carwashlogominified300.png';
+const logo = 'https://ik.imagekit.io/cv7afda6wzi/carwashlogominified300_H5OhHO4_GDzm.png?tr=w-50,h-50';
 require('./navbar.scss');
 
 
