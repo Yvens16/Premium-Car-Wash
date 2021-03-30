@@ -12,11 +12,11 @@ function Card({img, imgSmall, imgLarge, name, title, text}) {
       <h3 className='name'>{name}</h3>
       <div className="testimonial_card_title">{title}</div>
       <div className="stars">
-        <img src={star} srcset={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
-        <img src={star} srcset={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
-        <img src={star} srcset={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
-        <img src={star} srcset={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
-        <img src={star} srcset={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
+        <img src={star} srcSet={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
+        <img src={star} srcSet={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
+        <img src={star} srcSet={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
+        <img src={star} srcSet={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
+        <img src={star} srcSet={`${starSmall} 300w, ${starLarge} 900w`} loading="lazy" alt="étoile jaune"/>
       </div>
       <div className="testimonial_card_text">{text}</div>
     </div>
