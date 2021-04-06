@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {ReactComponent as AdressIcon} from '../../assets_2/svg/location_icon_svg.svg';
 import {ReactComponent as PhoneIcon} from '../../assets_2/svg/phone_icon_svg.svg';
 import {ReactComponent as MailIcon} from '../../assets_2/svg/email_icon_svg.svg';
@@ -15,10 +17,9 @@ function Contact() {
   const [message, setMessage] = useState('');
 
   const submit = () => {
-    console.log('Name', name);
-    console.log('Phone', phone);
-    console.log('Email', email);
-    console.log('Message', message);
+    toast.success("Nous avons bien reçu votre email Merci !", {
+      position: toast.POSITION.TOP_CENTER
+    });
     base('Contact_Us').create([
       {
         "fields": {
@@ -33,10 +34,18 @@ function Contact() {
         console.error(err);
         return;
       }
+      resetForm();
       records.forEach(function (record) {
         console.log(record.getId());
       });
     });
+  }
+
+  const resetForm = () => {
+    setName('');
+    setPhone('');
+    setEmail('');
+    setMessage('');
   }
   return (
     <section className='contact'>
@@ -73,18 +82,21 @@ function Contact() {
               <label htmlFor="name">Nom complet</label>
               <input
                 onChange={e => setName(e.target.value)}
+                value={name}
                 type="name" id="name" name="name" placeholder='Patrcik Dubois'/>
             </div>
             <div className="mail">
               <label htmlFor="mail">Email</label>
               <input
                 onChange={e => setEmail(e.target.value)}
+                value={email}
                 type="mail" id="mail" name="mail" placeholder='patrick@gmail.com'/>
             </div>
             <div className="phone">
               <label htmlFor="phone">Téléphone</label>
               <input
                 onChange={e => setPhone(e.target.value)}
+                value={phone}
                 type="phone" id="phone" name="phone" placeholder='06 56 54 45 54'/>
             </div>
           </div>
@@ -92,11 +104,12 @@ function Contact() {
             <label htmlFor="message">Message</label>
             <textarea
               onChange={e => setMessage(e.target.value)}
-              name="message" id="message" cols="20" rows="10"></textarea>
+              name="message" id="message" cols="20" rows="10" value={message}></textarea>
           </div>
         </div>
         <button type="submit" onClick={submit}>Envoyer le message</button>
       </div>
+      <ToastContainer />
     </section>
   )
 }
