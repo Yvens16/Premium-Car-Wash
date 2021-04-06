@@ -2,6 +2,10 @@
   color: #fff;
   padding: 0 10px;
   text-align: center;
+  @media(min-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
   &_contactUs {
     &_subtitle {
       color: #bfbfbf;
