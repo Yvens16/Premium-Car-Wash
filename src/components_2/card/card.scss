@@ -1,0 +1,26 @@
+.service_card {
+  background: #161618;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  border: 2px solid #161612;
+  border-radius: 10px;
+  &_content {
+    padding: 5px;
+    max-width: 200px;
+    &_title {
+      color: #fff;
+    }
+    &_description {
+      color: #818181;
+    }
+  }
+  &_image {
+    width: 100px;
+    flex-grow: 1;
+    max-width: 300px;
+  }
+}

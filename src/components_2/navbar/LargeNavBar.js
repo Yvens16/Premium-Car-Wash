@@ -9,18 +9,20 @@ require('./navbar.scss');
 function LargeNavBar() {
   return (
     <nav className="navbar-container-large">
-      <div className="navbar-container-large_logo">
-        <NavLink to='/'>
-          <Logo/>
-        </NavLink>
+      <div className="fixed-container">
+        <div className="navbar-container-large_logo">
+          <NavLink activeClassName='selected' to='/'>
+            <Logo/>
+          </NavLink>
+        </div>
+        <div className='navbar-container-large_menu'>
+          <ul>
+            <li><NavLink activeClassName='selected' to='/contactez-nous'>Contact</NavLink></li>
+            <li><NavLink activeClassName='selected' to='/devis'>Devis</NavLink></li>
+            <li></li>
+          </ul>
+        </div>      
       </div>
-      <div className='navbar-container-large_menu'>
-        <ul>
-          <li><NavLink activeClassName='selected' to='/contactez-nous'>Contact</NavLink></li>
-          <li><NavLink activeClassName='selected' to='/devis'>Devis</NavLink></li>
-          <li></li>
-        </ul>
-      </div>      
     </nav>
   )
 }

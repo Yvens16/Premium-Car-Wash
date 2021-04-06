@@ -1,1 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+body {
+  background-color: #000000;
+}
+body, button, a {
+  font-family: 'Poppins', sans-serif;
+}
+
+// html, body, .App, #root, #root>div {
+//   @media(min-width: 400px) {
+//     height: 100%
+//   }
+// }
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+  &_content {
+    padding-bottom: 2.5rem;
+    @media(min-width: 768px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

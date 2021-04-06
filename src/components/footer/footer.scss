@@ -3,14 +3,21 @@
 @import '../../styles/custom_style.scss';
 
 .footer {
-  background-color: $white;
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem; 
+  // background: #161618;
   text-align: center;
-  color: $selected_link;
+  color: #818181;
   opacity: 0.8;
   font-style: italic;
   width: 100%;
+  p {
+    margin-top: 0;
+  }
   a {
     text-decoration: none;
+    color: #818181;
   }
   &_social {
     display: flex;
@@ -18,10 +25,11 @@
     align-items: center;
     svg {
       width: 20px;
+      fill:#818181;
     }
   }
   &_copywright {
-    color: $selected_link;
+    color: #818181;
     text-align: center;
     opacity: 0.8;
     font-style: italic;

@@ -12,29 +12,35 @@ import Footer from './components/footer/Footer';
 import NavBarDeux from './components_2/navbar/SmallNavBar';
 import NavBarDeuxLarge from './components_2/navbar/LargeNavBar';
 import './index.scss';
+
+import './App.scss'
 const Pro = lazy(() => import('./components/Pros/v1/Page'));
 const ParticuliersPage = lazy(() => import('./components/Particuliers/v1/Page'));
 const Home = lazy(() => import('./components_2/homepage_2/Homepage'));
+const Contact = lazy(() => import('./components_2/contact/Contact'));
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Router>
         <ScrollRestoration />
         <NavBarDeux />
         <NavBarDeuxLarge />
+        <div className="App_content">
         {/* <Navbar/> */}
           <Suspense fallback={<div>Loading...</div>}>
             <Switch>
-            <Route path='/' children={<Home/>} />
+            <Route exact path='/' children={<Home/>} />
+            <Route path='/contactez-nous' children={<Contact/>}/>
               {/* <Route path='/choisir_sa_ville' children={<SelectCity/>}/>
               <Route path='/pro' children={<Pro/>} />
               <Route path='/' children={<ParticuliersPage/>} /> */}
             </Switch>
           </Suspense>
-        {/* <Footer/> */}
+        </div>
       </Router>
-    </div>
+      <Footer/>
+    </main>
   );
 }
 

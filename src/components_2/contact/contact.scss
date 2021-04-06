@@ -1,0 +1,100 @@
+.contact {
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
+  &_contactUs {
+    &_subtitle {
+      color: #bfbfbf;
+    }
+  }
+  &_info {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #bfbfbf;
+    &_adress, &_phone, &_email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      &-numbers {
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        text-decoration: none;
+        color: #bfbfbf;
+      }
+    }
+    .info-logo {
+      fill: #bfbfbf;
+      min-width: 30px;
+      min-height: 30px;
+    }
+  }
+  &_form {
+    padding: 10px;
+    background: #212121;
+    border-radius: 10px;
+    margin: 5vh 0;
+    @media(min-width: 1024px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &-client {
+      @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+      }
+      &_info {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        input {
+          border-radius: 5px;
+          padding: 4px 8px;
+          outline: none;
+        }
+        .name, .mail, .phone {
+          display: flex;
+          justify-content: space-between;
+          @media (min-width: 1024px) {
+            flex-direction: column;
+          }
+        }
+      }
+      &-message {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        textarea {
+          border-radius: 5px;
+          padding: 4px 8px;
+          outline: none;
+          @media (min-width: 1024px) {
+            width: 250px;
+            height: 300px;
+          }
+        }
+        @media (min-width: 1024px) {
+          flex-direction: column;
+        }
+      }
+    }
+    button {
+      color: #fff;
+      background: #000;
+      outline: none;
+      border-radius: 5px;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  }
+}
