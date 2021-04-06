@@ -40,7 +40,7 @@ function Hero() {
         <h1 className='title title_7'>Lavage sans eau à domicile</h1>
       </div>
       <button className='home_hero_devis'>
-          <NavLink to='/'>Devis Nettoyage</NavLink>
+          <NavLink to='/devis'>Devis Nettoyage</NavLink>
       </button>
     </section>
   )

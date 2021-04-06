@@ -18,6 +18,7 @@ const Pro = lazy(() => import('./components/Pros/v1/Page'));
 const ParticuliersPage = lazy(() => import('./components/Particuliers/v1/Page'));
 const Home = lazy(() => import('./components_2/homepage_2/Homepage'));
 const Contact = lazy(() => import('./components_2/contact/Contact'));
+const Devis = lazy(() => import('./components_2/devis/Devis'));
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Switch>
             <Route exact path='/' children={<Home/>} />
             <Route path='/contactez-nous' children={<Contact/>}/>
+            <Route path='/devis' children={<Devis/>}/>
               {/* <Route path='/choisir_sa_ville' children={<SelectCity/>}/>
               <Route path='/pro' children={<Pro/>} />
               <Route path='/' children={<ParticuliersPage/>} /> */}
